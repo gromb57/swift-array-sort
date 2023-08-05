@@ -8,6 +8,7 @@
 import Foundation
 
 extension Array where Element == Int {
+    @discardableResult
     mutating func countingSort() -> Self {
         let n: Int = self.count
         let k: Int = self.max() ?? 0

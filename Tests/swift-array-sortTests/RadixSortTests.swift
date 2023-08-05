@@ -1,15 +1,15 @@
 //
-//  CountingSortTests.swift
+//  RadixSortTests.swift
 //  
 //
-//  Created by Jerome Bach on 04/08/2023.
+//  Created by Jerome Bach on 05/08/2023.
 //
 
 import Foundation
 import XCTest
 @testable import swift_array_sort
 
-final class CountingSortTests: XCTestCase {
+final class RadixSortTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -26,8 +26,8 @@ final class CountingSortTests: XCTestCase {
         // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
         // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
         
-        var t = arrayCounting
-        XCTAssertEqual(t.countingSort(), arrayCountingSorted)
+        var t = arrayRadix
+        XCTAssertEqual(t.radixSort(), arrayRadixSorted)
     }
 
     func testPerformanceExample() throws {
@@ -37,18 +37,4 @@ final class CountingSortTests: XCTestCase {
         }
     }
 
-    func testA() throws {
-        var t = arrayT
-        XCTAssertEqual(t.countingSort(), arrayTSorted)
-    }
-    
-    func testB() throws {
-        var t = arrayBelowTen
-        XCTAssertEqual(t.countingSort(), arrayBelowTenSorted)
-    }
-    
-    func testC() throws {
-        var t = arrayRadix
-        XCTAssertEqual(t.countingSort(), arrayRadixSorted)
-    }
 }
