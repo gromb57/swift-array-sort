@@ -8,6 +8,7 @@
 import Foundation
 
 extension Array where Element: Comparable {
+    @discardableResult
     mutating func bubbleSort() -> Self {
         var i: Int = 0
         let n: Int = self.count

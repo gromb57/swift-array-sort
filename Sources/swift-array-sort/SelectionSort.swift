@@ -8,6 +8,7 @@
 import Foundation
 
 extension Array where Element: Comparable {
+    @discardableResult
     mutating func selectionSort() -> Self {
         var i: Int = 0
         var j: Int

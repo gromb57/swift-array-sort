@@ -8,6 +8,7 @@
 import Foundation
 
 extension Array where Element: Comparable {
+    @discardableResult
     mutating func quickSort() -> Self {
         rapide(0, self.count - 1)
         return self

@@ -8,6 +8,7 @@
 import Foundation
 
 extension Array where Element: Comparable {
+    @discardableResult
     mutating func insertionSort() -> Self {
         let n: Int = self.count
         let upper: Int = n
